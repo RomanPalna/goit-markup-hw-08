@@ -1,20 +1,35 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: -50%;
+  transform: translate(-50%);
+  background-color: $linkSeconaryColor;
+  z-index: 1;
+}
+
 .menu {
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @media screen and (min-width: $tablet) {
+  width: 1200px;
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: $tablet) {
+  .menu {
     width: $tablet;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  }
+}
 
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+@media screen and (min-width: $desktop) {
+  .menu {
+    width: $desktop;
   }
 }

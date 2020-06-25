@@ -1,0 +1,50 @@
+.footer {
+  background-color: #2f303a;
+
+  &__nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 48px;
+    padding-bottom: 28px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    color: $linkPrimaryColor;
+
+    font-family: $Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
+  }
+
+  &__studio {
+    color: $linkSeconaryColor;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__link {
+  font-family: $Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

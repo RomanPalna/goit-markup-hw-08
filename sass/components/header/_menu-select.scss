@@ -1,4 +1,10 @@
 .menu__select {
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+  }
+
   @media screen and (max-width: 767px) {
     position: absolute;
     display: none;
@@ -15,13 +21,6 @@
       @media screen and (min-width: 480px) {
         display: block;
       }
-    }
-  }
-
-  .menu__select.is-open {
-    @media screen and (min-width: $tablet) {
-      position: relative;
-      display: flex;
     }
   }
 
@@ -69,8 +68,6 @@
   .menu__link {
     position: relative;
     display: inline-block;
-    margin: 0 auto 40px;
-    padding-bottom: 8px;
     color: $primaryTextColor;
 
     transition: color 250ms $animationTimingFunction;
@@ -98,14 +95,18 @@
     @media screen and (min-width: $tablet) {
       padding-top: 32px;
       padding-bottom: 32px;
+      margin: 0;
       color: $primaryTextColor;
+    }
+
+    @media screen and (min-width: $mobile) {
+      margin: 0 auto 40px;
+      padding-bottom: 8px;
     }
   }
 
   .menu-address {
     display: block;
-    text-align: center;
-    align-items: center;
     margin: 0 auto;
 
     &__link {
@@ -127,14 +128,6 @@
       fill: $linkPrimaryColor;
     }
 
-    &__item:not(:last-child) {
-      margin-bottom: 16px;
-    }
-
-    &__item:last-child {
-      margin-bottom: 60px;
-    }
-
     &__icon {
       display: inline-flex;
       width: 17px;
@@ -143,6 +136,18 @@
       align-items: baseline;
 
       fill: currentColor;
+    }
+  }
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+    align-items: center;
+
+    &__item:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 60px;
     }
   }
 }
