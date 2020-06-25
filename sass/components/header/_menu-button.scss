@@ -1,0 +1,19 @@
+.menu__button {
+  display: inline-flex;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &--open .icon-close {
+    display: block;
+  }
+
+  &--open .icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

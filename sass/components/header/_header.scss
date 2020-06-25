@@ -1,0 +1,20 @@
+.menu {
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
