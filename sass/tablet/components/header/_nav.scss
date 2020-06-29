@@ -1,0 +1,52 @@
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  .menu__nav {
+    display: inline-block;
+  }
+
+  .menu__content {
+    display: flex;
+    margin-right: 84px;
+  }
+
+  .menu__item {
+    font-family: $Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .menu__link {
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-text-color);
+
+    transition: color 250ms $animationTimingFunction;
+
+    &--active::before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: $linkPrimaryColor;
+      border-radius: 2px;
+    }
+    &:hover,
+    &:focus {
+      color: $linkPrimaryColor;
+    }
+
+    &--active {
+      color: $linkPrimaryColor;
+    }
+  }
+}

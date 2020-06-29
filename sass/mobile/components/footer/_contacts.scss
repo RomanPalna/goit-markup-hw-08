@@ -1,0 +1,50 @@
+@media screen and (max-width: $mobile) {
+  .footer {
+    background-color: #2f303a;
+
+    &__nav {
+      width: $mobile;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 48px;
+      padding-bottom: 28px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__logo {
+      color: $linkPrimaryColor;
+
+      font-family: $Raleway;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 1.18;
+      letter-spacing: 0.03em;
+
+      margin-bottom: 10px;
+    }
+
+    &__studio {
+      color: $linkSeconaryColor;
+    }
+
+    &__address {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+  }
+
+  .footer__link {
+    font-family: $Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

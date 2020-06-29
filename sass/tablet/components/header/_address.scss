@@ -1,0 +1,39 @@
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  .menu-address {
+    display: inline-block;
+    margin-left: auto;
+
+    &__link {
+      color: $titleTextColor;
+
+      display: flex;
+      align-items: center;
+
+      font-family: $Roboto;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.16;
+
+      letter-spacing: 0.02em;
+      font-style: normal;
+
+      transition: color 250ms $animationTimingFunction,
+        fill 250ms $animationTimingFunction;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: $linkPrimaryColor;
+      fill: $linkPrimaryColor;
+    }
+
+    &__icon {
+      display: inline-flex;
+      width: 17px;
+      height: 17px;
+      margin-right: 10px;
+      align-items: baseline;
+
+      fill: currentColor;
+    }
+  }
+}

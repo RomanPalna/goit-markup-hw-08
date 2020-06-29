@@ -1,0 +1,30 @@
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: $linkSeconaryColor;
+    z-index: 1;
+  }
+
+  .menu {
+    display: flex;
+
+    width: $tablet;
+    height: 80px;
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    border-bottom: 1px solid #ececec;
+  }
+
+  .menu__select {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
