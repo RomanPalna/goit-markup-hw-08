@@ -13,48 +13,71 @@
   </head>
   <body>
     <!-- Хедер -->
-    <header class="menu">
-      <div class="menu__logo">
-        <a href="./" class="logo"
-          >Web
-          <span class="logo__studio">Studio</span>
-        </a>
-        <nav class="menu__nav">
-          <ul class="menu__content">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link">Студия</a>
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link menu__link--active"
-                >Портфолио</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+    <header>
+      <div class="menu">
+        <div class="menu__logo">
+          <a href="./" class="logo"
+            >Web
+            <span class="logo__studio">Studio</span>
+          </a>
 
-        <address class="menu-address">
-          <ul class="menu-address__content">
-            <li class="menu-address__item">
-              <a href="mailto:info@devstudio.com" class="menu-address__link">
-                <svg class="menu-address__icon">
-                  <use href="./images/symbol-defs.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="menu-address__item">
-              <a href="tel:+380961111111" class="menu-address__link">
-                <svg class="menu-address__icon">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <button
+            type="button"
+            class="menu__button menu__button--open"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Переключатель меню">
+              <use
+                class="icon-menu"
+                href="./images/menu-select/menu-close.svg#menu"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/menu-select/menu-close.svg#close"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu__select is-open" data-menu>
+          <nav class="menu__nav">
+            <ul class="menu__content">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link menu__link--active"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="menu-address">
+            <ul class="menu-address__content">
+              <li class="menu-address__item">
+                <a href="mailto:info@devstudio.com" class="menu-address__link">
+                  <svg class="menu-address__icon">
+                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="menu-address__item">
+                <a href="tel:+380961111111" class="menu-address__link">
+                  <svg class="menu-address__icon">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -326,5 +349,22 @@
       </div>
       <p class="rights">2020 | Developed by GoIT Students</p>
     </footer>
+
+    <script>
+      (() => {
+        const menuBtnRef = document.querySelector('[data-menu-button]');
+        const mobileMenuRef = document.querySelector('[data-menu]');
+
+        menuBtnRef.addEventListener('click', () => {
+          const expanded =
+            menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+          menuBtnRef.classList.toggle('menu__button--open');
+          menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+          mobileMenuRef.classList.toggle('is-open');
+        });
+      })();
+    </script>
   </body>
 </html>

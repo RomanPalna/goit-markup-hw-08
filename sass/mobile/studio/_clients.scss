@@ -1,6 +1,6 @@
 @media screen and (max-width: $mobile) {
   .clients {
-    min-width: 450px;
+    max-width: 450px;
     padding-bottom: 60px;
 
     &__title {

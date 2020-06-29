@@ -3,6 +3,9 @@
     display: inline-block;
     margin-left: auto;
 
+    &__content {
+      display: flex;
+    }
     &__link {
       color: $titleTextColor;
 
@@ -11,9 +14,8 @@
 
       font-family: $Roboto;
       font-weight: 500;
-      font-size: 12px;
-      line-height: 1.16;
-
+      font-size: 14px;
+      line-height: 1.14;
       letter-spacing: 0.02em;
       font-style: normal;
 
@@ -24,6 +26,10 @@
     &__link:focus {
       color: $linkPrimaryColor;
       fill: $linkPrimaryColor;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
     }
 
     &__icon {
