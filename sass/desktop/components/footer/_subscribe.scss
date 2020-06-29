@@ -1,0 +1,120 @@
+@media screen and (min-width: $desktop) {
+  .footer-subscribe {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer-subscribe-text {
+    display: grid;
+  }
+
+  .join__text {
+    margin-bottom: 20px;
+  }
+
+  .footer__subscribe-input {
+    font-family: $Roboto;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    width: 359px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 12px 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background-color: transparent;
+  }
+
+  .footer-subscribe__btn {
+    position: relative;
+
+    font-family: $Roboto;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $linkSeconaryColor;
+    background-color: $linkPrimaryColor;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 62px 10px 29px;
+    margin-left: 12px;
+
+    transition: background-color 250ms $animationTimingFunction,
+      color 250ms $animationTimingFunction;
+
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+      background-color: $linkSeconaryColor;
+      color: $linkPrimaryColor;
+    }
+  }
+
+  .footer-subscribe__btn {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/send.svg);
+
+      left: 148px;
+      top: 13px;
+
+      transition: transform 250ms $animationTimingFunction;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/send-two.svg);
+
+      margin-left: 120px;
+
+      transform: translateY(40px);
+      transition: transform 250ms $animationTimingFunction;
+    }
+
+    &:hover::after {
+      transform: translateY(-35px);
+    }
+
+    &:hover::before {
+      transform: translateY(0);
+    }
+  }
+
+  .rights {
+    font-family: $Roboto;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding: 18px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

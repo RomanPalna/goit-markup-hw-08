@@ -1,0 +1,5 @@
+@media screen and (min-width: $mobile) and (max-width: $desktop) {
+  .job__container {
+    display: none;
+  }
+}
