@@ -31,14 +31,25 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../images/header.jpg);
+      url(../images/header/header-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 400px;
-    max-width: $tablet;
+    width: $tablet;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (max-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../images/header/header-tablet-2x.jpg);
+    }
   }
 
   .hero__button {
