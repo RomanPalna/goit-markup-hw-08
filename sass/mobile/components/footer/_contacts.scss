@@ -1,6 +1,7 @@
 @media screen and (max-width: $mobile) {
   .footer {
     background-color: #2f303a;
+    display: inline-block;
 
     &__nav {
       width: $mobile;

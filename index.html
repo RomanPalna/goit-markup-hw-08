@@ -192,7 +192,9 @@
           <li class="job__list">
             <a href=""
               ><img
-                src="./images/box11.jpg"
+              srcset="./images/job/desktop.jpg 1x,
+                      ./images/job/desktop2x.jpg 2x"
+                src="./images/job/desktop.jpg"
                 alt="Десктопные приложения"
                 class="job__link"
             /></a>
@@ -201,7 +203,9 @@
           <li class="job__list">
             <a href=""
               ><img
-                src="./images/box22.jpg"
+              srcset="./images/job/smart.jpg 1x,
+                      ./images/job/smart2x.jpg 2x"
+                src="./images/job/smart.jpg"
                 alt="Мобильные приложения"
                 class="job__link"
             /></a>
@@ -210,7 +214,9 @@
           <li class="job__list">
             <a href=""
               ><img
-                src="./images/box33.jpg"
+                srcset="./images/job/monitor.jpg 1x,
+                      ./images/job/monitor2x.jpg 2x"
+                      src="./images/job/monitor.jpg"
                 alt="Дизайнерские решения"
                 class="job__link"
             /></a>
@@ -225,11 +231,26 @@
         <ul class="team__list">
           <li class="team__item">
             <figure class="team__capture">
-              <img
-                src="./images/team/johnsmith.jpg"
-                alt="John Smith"
-                class="team__photo"
-              />
+              
+              <picture>
+                <source srcset="./images/team/mobile/designer.jpg 1x,
+                ./images/team/mobile/designer2x.jpg"
+                                media="(max-width: 480px)">
+
+                <source srcset="./images/team/tablet/designer.jpg 1x,
+                ./images/team/tablet/designer2x.jpg 2x" 
+                        media="(max-width: 1199px)">
+
+                <source srcset="./images/team/desktop/designer.jpg 1x,
+                ./images/team/desktop/designer2x.jpg 2x"
+                          media="(min-width: 1200px)">
+              
+                          <img
+                src="./images/team/desktop/designer.jpg"
+                alt="Николай Кучеренко"
+                class="team__photo"/>
+              </picture>
+
               <figcaption class="team__name">
                 Николай Кучеренко
               </figcaption>
@@ -271,11 +292,24 @@
           </li>
           <li class="team__item">
             <figure class="team__capture">
-              <img
-                src="./images/team/martastewart.jpg"
-                alt="Marta Stewart"
-                class="team__photo"
-              />
+             <picture>
+                <source srcset="./images/team/mobile/developer.jpg 1x,
+                ./images/team/mobile/developer2x.jpg 2x"
+                                media="(max-width: 480px)">
+
+                <source srcset="./images/team/tablet/developer.jpg 1x,
+                ./images/team/tablet/developer2x.jpg 2x" 
+                        media="(max-width: 1199px)">
+
+                <source srcset="./images/team/desktop/developer.jpg 1x,
+                ./images/team/desktop/developer2x.jpg 2x"
+                          media="(min-width: 1200px)">
+              
+                          <img
+                src="./images/team/desktop/developer.jpg"
+                alt="Ольга Иванова"
+                class="team__photo"/>
+              </picture>
               <figcaption class="team__name">
                 Ольга Иванова
               </figcaption>
@@ -319,11 +353,24 @@
           </li>
           <li class="team__item">
             <figure class="team__capture">
-              <img
-                src="./images/team/robertjakis.jpg"
-                alt="Robert Jakis"
-                class="team__photo"
-              />
+               <picture>
+                <source srcset="./images/team/mobile/marketing.jpg 1x,
+                ./images/team/mobile/marketing2x.jpg 2x"
+                                media="(max-width: 480px)">
+
+                <source srcset="./images/team/tablet/marketing.jpg 1x,
+                ./images/team/tablet/marketing2x.jpg 2x" 
+                        media="(max-width: 1199px)">
+
+                <source srcset="./images/team/desktop/marketing.jpg 1x,
+                ./images/team/desktop/marketing2x.jpg 2x"
+                          media="(min-width: 1200px)">
+              
+                          <img
+                src="./images/team/desktop/marketing.jpg"
+                alt="Ольга Иванова"
+                class="team__photo"/>
+              </picture>
               <figcaption class="team__name">
                 Андрей Шевченко
               </figcaption>
@@ -367,11 +414,24 @@
           </li>
           <li class="team__item">
             <figure class="team__capture">
-              <img
-                src="./images/team/martindoe.jpg"
-                alt="Martin Doe"
-                class="team__photo"
-              />
+              <picture>
+                <source srcset="./images/team/mobile/uidesigner.jpg 1x,
+                ./images/team/mobile/uidesigner2x.jpg 2x"
+                                media="(max-width: 480px)">
+
+                <source srcset="./images/team/tablet/uidesigner.jpg 1x,
+                ./images/team/tablet/uidesigner2x.jpg 2x" 
+                        media="(max-width: 1199px)">
+
+                <source srcset="./images/team/desktop/uidesigner.jpg 1x,
+                ./images/team/desktop/uidesigner2x.jpg 2x"
+                          media="(min-width: 1200px)">
+              
+                          <img
+                src="./images/team/desktop/uidesigner.jpg"
+                alt="Иван Николаев"
+                class="team__photo"/>
+              </picture>
               <figcaption class="team__name">
                 Иван Николаев
               </figcaption>

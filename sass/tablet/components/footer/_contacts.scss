@@ -1,6 +1,7 @@
 @media screen and (min-width: $mobile) and (max-width: $desktop) {
   .footer {
     background-color: #2f303a;
+    display: inline-block;
 
     &__nav {
       display: flex;
