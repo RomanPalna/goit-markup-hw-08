@@ -1,6 +1,10 @@
 .menu__button {
   display: inline-flex;
 
+  &--open .icon-menu {
+    display: none;
+  }
+
   & .icon-close {
     display: none;
   }
@@ -9,11 +13,7 @@
     display: block;
   }
 
-  &--open .icon-menu {
-    display: none;
-  }
-
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 481px) {
     display: none;
   }
 }
