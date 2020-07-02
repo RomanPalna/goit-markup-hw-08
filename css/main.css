@@ -993,6 +993,7 @@ summary {
   .footer {
     background-color: #2f303a;
     display: inline-block;
+    padding-bottom: 60px;
   }
   .footer__nav {
     width: 480px;
@@ -1091,6 +1092,9 @@ summary {
     margin-bottom: 20px;
     color: #ffffff;
   }
+  .footer-subscribe {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1139,8 +1143,6 @@ summary {
     min-width: 200px;
     height: 50px;
     padding: 10px 62px 10px 29px;
-    margin-left: 12px;
-    margin-bottom: 60px;
     -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
