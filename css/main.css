@@ -2249,6 +2249,9 @@ summary {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  .footer-subscribe__form {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1200px) {
