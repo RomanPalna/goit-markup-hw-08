@@ -302,16 +302,16 @@ summary {
   display: inline-flex;
 }
 
+.menu__button--open .icon-close {
+  display: block;
+}
+
 .menu__button--open .icon-menu {
   display: none;
 }
 
 .menu__button .icon-close {
   display: none;
-}
-
-.menu__button--open .icon-close {
-  display: block;
 }
 
 @media screen and (min-width: 481px) {
